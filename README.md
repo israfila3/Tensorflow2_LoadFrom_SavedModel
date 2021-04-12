@@ -5,4 +5,4 @@
 3. Also Configure OpenCV to Visual Studio
 ## Add source example "Test.cpp"
 
-* Ref (https://github.com/Neargye/hello_tf_c_api)
+* Ref (https://github.com/Neargye/hello_tf_c_api) (https://github.com/danishshres)
