@@ -21,6 +21,11 @@ std::string filename1;
 void DeallocateBuffer(void* data, size_t) {
 	std::free(data);
 }
+void Network::Deallocator(void* data, size_t length, void* arg)
+{
+	std::free(data);
+}
+
 TF_Buffer* ReadBufferFromFile(std::string file) {
 	std::ifstream f(file, std::ios::binary);
 	if (f.fail() || !f.is_open()) {
@@ -183,11 +188,6 @@ void Network::Detect(cv::Mat image)
 
 
 }
-void Network::Deallocator(void* data, size_t length, void* arg)
-{
-	std::free(data);
-}
-
 
 
 int main() {
