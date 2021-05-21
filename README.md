@@ -9,12 +9,13 @@
 1. Find serialized protobuf string using python
 ```
 import tensorflow as tf  
-gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.333, 
+gpu_options = tf.compat.v1.GPUOptions(per_process_gpu_memory_fraction=0.33, 
                             allow_growth=True,
                             visible_device_list='0')
-config = tf.ConfigProto(gpu_options=gpu_options)
+config = tf.compat.v1.ConfigProto(gpu_options=gpu_options)
 serialized = config.SerializeToString()
 list(map(hex, serialized))
+print(serialized)
 ```
 Output will be as follows
 ```
