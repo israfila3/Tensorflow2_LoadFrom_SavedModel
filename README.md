@@ -15,7 +15,7 @@ gpu_options = tf.compat.v1.GPUOptions(per_process_gpu_memory_fraction=0.33,
 config = tf.compat.v1.ConfigProto(gpu_options=gpu_options)
 serialized = config.SerializeToString()
 list(map(hex, serialized))
-print(serialized)
+print(list(map(hex, serialized)))
 ```
 Output will be as follows
 ```
