@@ -31,4 +31,9 @@ uint8_t config[16] = { 0x32, 0xe, 0x9, 0x1d, 0x5a,0x64, 0x3b, 0xdf, 0x4f, 0xd5, 
 TF_SetConfig(SessionOpts, (void*)config, 16, Status);
 ```
 
+## Check input and output tensor names with the SavedModel CLI
+```
+saved_model_cli show --dir /path/to/model/dir --all
+```
+
 * Ref (https://github.com/Neargye/hello_tf_c_api) (https://github.com/danishshres)
