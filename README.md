@@ -33,7 +33,7 @@ TF_SetConfig(SessionOpts, (void*)config, 16, Status);
 
 ## Check input and output tensor names with the SavedModel CLI
 ```
-saved_model_cli show --dir /path/to/model/dir --all
+saved_model_cli show --dir /path/to/saved_model/dir --all
 ```
 
 * Ref (https://github.com/Neargye/hello_tf_c_api) (https://github.com/danishshres)
